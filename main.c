@@ -5,7 +5,7 @@ Registration Number: 23/U/BIO/025/GV
 */
 int main(){
     int courseCodes1[8] = {1101,1102,1103,1104,1105,1106,1107,1108};
-	int courseCodes2[8]={1201,1202,1203,1204,1205,1206,1207,1208};
+	int courseCodes2[8] = {1201,1202,1203,1204,1205,1206,1207,1208};
     int marks1[8], marks2[8];
     
     // Entering Semester I marks
@@ -43,7 +43,7 @@ int main(){
     char grade;
     //Semester 1 GPA
     printf("\n SEMESTER I REPORT \n");
-    printf("Code\t\tMarks\tGrade\tGP\tCU\tWeighted_Contribution\n");
+    printf("Code\t\tMarks\tGrade\tGP\tCU\tWeighted\n");
     for(int i=0; i<8; i++){
         int marks = marks1[i];
         if(marks >= 80){ 
