@@ -4,13 +4,14 @@ Name: BUKENYA JOHN MATTHIAS
 Registration Number: 23/U/BIO/025/GV
 */
 int main(){
-    int courseCodes[8] = {1101,1102,1103,1104,1105,1106,1107,1108};
+    int courseCodes1[8] = {1101,1102,1103,1104,1105,1106,1107,1108};
+	int courseCodes2[8]={1201,1202,1203,1204,1205,1206,1207,1208}
     int marks1[8], marks2[8];
     
     // Entering Semester I marks
     printf("ENTER MARKS FOR SEMESTER I\n");
     for(int i=0; i<8; i++){
-        printf("TEMB %d: ", courseCodes[i]);
+        printf("TEMB %d: ", courseCodes1[i]);
         scanf("%d", &marks1[i]);
         if(marks1[i] < 0 || marks1[i] > 100){
         printf("Invalid score entered! Please enter between 0 and 100.\n");
@@ -21,7 +22,7 @@ int main(){
     // Entering Semester II marks
     printf("\nENTER MARKS FOR SEMESTER II\n");
     for(int i=0; i<8; i++){
-        printf("TEMB %d: ", courseCodes[i]);
+        printf("TEMB %d: ", courseCodes2[i]);
         scanf("%d", &marks2[i]);
         if(marks2[i] < 0 || marks2[i] > 100){
         printf("Invalid score entered! Please enter between 0 and 100.\n");
@@ -65,7 +66,7 @@ int main(){
         total_GP1 = total_GP1+ weighted;
         total_CU1 =total_CU1+ credits1[i];
 
-        printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes[i], marks, grade, grade_point, credits1[i], weighted);
+        printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes1[i], marks, grade, grade_point, credits1[i], weighted);
     }
     float gpa1 = total_GP1 / total_CU1;
 
@@ -94,7 +95,7 @@ int main(){
         total_GP2 += weighted;
         total_CU2 += credits2[i];
 
-        printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes[i], marks, grade, grade_point, credits2[i], weighted);
+        printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes2[i], marks, grade, grade_point, credits2[i], weighted);
     }
     float gpa2 = total_GP2 / total_CU2;
 
