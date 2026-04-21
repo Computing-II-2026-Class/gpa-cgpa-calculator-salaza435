@@ -106,13 +106,13 @@ int main(){
     printf("\nSemester I GPA: %.2f\n", gpa1);
     printf("Semester II GPA: %.2f\n", gpa2);
     printf("CGPA: %.2f\n", cgpa);
-    if(cgpa >= 4.4 && cgpa <= 5.0){
+    if(cgpa >= 4.40 && cgpa <= 5.00){
     printf("Classification: First Class\n");}
-else if(cgpa >= 3.6 && cgpa <= 4.39){
+else if(cgpa >= 3.60 && cgpa <= 4.39){
     printf("Classification: Second Class Upper\n");}
-else if(cgpa >= 2.8 && cgpa <= 3.59){
+else if(cgpa >= 2.80 && cgpa <= 3.59){
     printf("Classification: Second Class Lower\n");}
-else if(cgpa >= 2.0 && cgpa <= 2.79){
+else if(cgpa >= 2.00 && cgpa <= 2.79){
     printf("Classification: Pass\n");}
 else{
     printf("Classification: Fail\n");}
