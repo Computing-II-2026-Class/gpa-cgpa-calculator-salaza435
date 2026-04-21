@@ -1,11 +1,9 @@
+/* Name: BUKENYA JOHN NUMBER */
+/* Student Number: 25/U/BIO/025/GV */
 #include<stdio.h>
-/*
-Name: BUKENYA JOHN MATTHIAS
-Registration Number: 23/U/BIO/025/GV
-*/
 int main(){
     int courseCodes1[8] = {1101,1102,1103,1104,1105,1106,1107,1108};
-	int courseCodes2[8] = {1201,1202,1203,1204,1205,1206,1207,1208};
+	int courseCodes2[8]={1201,1202,1203,1204,1205,1206,1207,1208};
     int marks1[8], marks2[8];
     
     // Entering Semester I marks
@@ -63,8 +61,8 @@ int main(){
 		grade_point=0; }
         
         weighted = grade_point * credits1[i];
-        total_GP1 = total_GP1+ weighted;
-        total_CU1 =total_CU1+ credits1[i];
+        total_GP1 = total_GP1 + weighted;
+        total_CU1 =total_CU1 + credits1[i];
 
         printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes1[i], marks, grade, grade_point, credits1[i], weighted);
     }
