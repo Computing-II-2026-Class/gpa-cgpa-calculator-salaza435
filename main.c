@@ -14,8 +14,8 @@ int main(){
         printf("TEMB %d: ", courseCodes1[i]);
         scanf("%d", &marks1[i]);
         if(marks1[i] < 0 || marks1[i] > 100){
-        printf("Invalid score entered! Please enter between 0 and 100.\n");
-        i--;
+        printf("Invalid score entered\n");
+        return 0;
     }  
     }
 
@@ -25,8 +25,8 @@ int main(){
         printf("TEMB %d: ", courseCodes2[i]);
         scanf("%d", &marks2[i]);
         if(marks2[i] < 0 || marks2[i] > 100){
-        printf("Invalid score entered! Please enter between 0 and 100.\n");
-        i--;
+        printf("Invalid score entered\n");
+        return 0;
     }
 }
     //storing credit units for semester 1
@@ -100,7 +100,7 @@ int main(){
     float gpa2 = (float)total_GP2 / total_CU2;
 
     // Calculating CGPA
-    float cgpa = (gpa1 + gpa2) / 2;
+    float cgpa = (float)(total_GP1 + total_GP2)/(total_CU1 + total_CU2);
 
     // Final report
     printf("\nSemester I GPA: %.2f\n", gpa1);
@@ -108,11 +108,11 @@ int main(){
     printf("CGPA: %.2f\n", cgpa);
     if(cgpa >= 4.40 && cgpa <= 5.00){
     printf("Classification: First Class\n");}
-else if(cgpa >= 3.60 && cgpa <= 4.39){
+else if(cgpa >= 3.60 && cgpa < 4.40){
     printf("Classification: Second Class Upper\n");}
-else if(cgpa >= 2.80 && cgpa <= 3.59){
+else if(cgpa >= 2.80 && cgpa <= 3.6){
     printf("Classification: Second Class Lower\n");}
-else if(cgpa >= 2.00 && cgpa <= 2.79){
+else if(cgpa >= 2.00 && cgpa <= 2.8){
     printf("Classification: Pass\n");}
 else{
     printf("Classification: Fail\n");}
