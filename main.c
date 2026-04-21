@@ -35,8 +35,8 @@ int main(){
     int credits2[8] = {4,3,3,3,3,3,3,3};
 
     // Calculating Gpa
-    float total_GP1 = 0, total_CU1 = 0;
-    float total_GP2 = 0, total_CU2 = 0;
+    int total_GP1 = 0, total_CU1 = 0;
+    int total_GP2 = 0, total_CU2 = 0;
     //weighted is the weighted contribution which product of grade point and credit unit
     int weighted;
     int grade_point;
@@ -92,8 +92,8 @@ int main(){
 		 grade_point=0; }
 
         weighted = grade_point * credits2[i];
-        total_GP2 =total_GP2 weighted;
-        total_CU2 =total_CU2 credits2[i];
+        total_GP2 =total_GP2 + weighted;
+        total_CU2 =total_CU2 + credits2[i];
 
         printf("TEMB %d\t%d\t%c\t%d\t%d\t%d\n", courseCodes2[i], marks, grade, grade_point, credits2[i], weighted);
     }
